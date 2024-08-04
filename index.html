@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math Quiz Game</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img src="./img/logo-removebg-preview.png" id="logo">
+      <div>Aawart's Simple Game</div>
+    </header>
+    <main>
+      <div id="question"></div>
+      <div id="input">
+        <input
+          type="number"
+          id="userAnswer"
+          placeholder="Enter integer answer"
+          autofocus
+        />
+        <button id="submitButton" onclick="checkAnswer()">Submit</button>
+      </div>
+      <div id="answer"></div>
+      <div id="score">Score: 0</div>
+      <div id="notification"></div>
+    </main>
+    <footer>
+      <img src="./img/new maths quiz 1.jpg" class="icon" />
+      <img src="./img/new maths quiz 2.jpg" class="icon" />
+      <img src="./img/new maths quiz 3.jpg" class="icon" />
+      <img src="./img/new maths quiz 4.jpg" class="icon" />
+    </footer>
+    <script src="./js/index.js" defer></script>
+  </body>
+</html>

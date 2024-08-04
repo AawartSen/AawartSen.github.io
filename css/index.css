@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    font-size: 2.5em;
+    font-family: "Dancing Script", cursive;
+    display: flex;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#logo {
+    height: 2em;
+}
+
+.icon {
+    width: 12vw;
+}
+
+#question {
+    margin-bottom: 20px;
+    font-size: 3em;
+}
+
+#answer {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#score {
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+input[type="number"],
+button {
+    border: none;
+    padding: 0.6em 1em;
+    font-size: 1em;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input[type="number"] {
+    outline: none;
+    border-radius: 0.8em 0 0 0.8em;
+    width: 40vw;
+}
+
+button {
+    border-radius: 0 0.8em 0.8em 0;
+    position: relative;
+    right: 4ch;
+    color: white;
+    background-color: teal;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: salmon;
+}
+
+.wave-animation {
+    animation: wave 0.5s ease-in-out;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+#notification {
+    transform: translate(-50%, -50%);
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 1.2em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1000;
+}
+
+#notification.show {
+    opacity: 1;
+}
+
+#notification.correct {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#notification.incorrect {
+    background-color: #f8d7da;
+    color: #721c24;
+}
